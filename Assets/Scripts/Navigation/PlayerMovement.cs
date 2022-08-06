@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 namespace Navigation
 {
@@ -12,6 +13,7 @@ namespace Navigation
         private List<Waypoint> _waypoints;
         private Waypoint _currentWaypoint;
         private int _waypointIndex = 0;
+        public static UnityEvent OnPlayerStop = new UnityEvent();
 
         private void Start()
         {
@@ -58,6 +60,7 @@ namespace Navigation
                     Time.deltaTime * _agent.angularSpeed);
                 yield return null;
             }
+            OnPlayerStop?.Invoke();
         }
     }
 }
