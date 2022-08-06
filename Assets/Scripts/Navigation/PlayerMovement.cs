@@ -16,16 +16,16 @@ namespace Navigation
         private void Start()
         {
             _agent = GetComponent<NavMeshAgent>();
+            
             _waypoints = FindObjectsOfType<Waypoint>().ToList();
             _waypoints = _waypoints.OrderBy(waypoint => waypoint.Id).ToList();
             _waypoints.ForEach(waypoint => Debug.Log(waypoint.Id));
+            
             _currentWaypoint = _waypoints[0];
-        }
-
-        private void Update()
-        {
-            if (!Input.GetKeyDown(KeyCode.Space)) return;
+            
             SetDestination();
+            
+            Waypoint.OnClearWaypoint.AddListener(SetDestination);
         }
 
         private void SetDestination()
@@ -42,7 +42,8 @@ namespace Navigation
         private IEnumerator RotateToTargetCO()
         {
             var sqrStopDistance = _agent.stoppingDistance * _agent.stoppingDistance;
-            var rotateRotation = _currentWaypoint.transform.rotation;
+            var targetRotation = Quaternion.Euler(0, _currentWaypoint.transform.rotation.eulerAngles.y, 0);
+
             while (true)
             {
                 var distance = (transform.position - _agent.destination).sqrMagnitude;
@@ -50,10 +51,10 @@ namespace Navigation
                 yield return null;
             }
 
-            while (Quaternion.Angle(transform.rotation, rotateRotation) > 0.5f)
+            while (Quaternion.Angle(transform.rotation, targetRotation) > 0.5f)
             {
                 transform.rotation = Quaternion.RotateTowards(transform.rotation,
-                    rotateRotation,
+                    targetRotation,
                     Time.deltaTime * _agent.angularSpeed);
                 yield return null;
             }
