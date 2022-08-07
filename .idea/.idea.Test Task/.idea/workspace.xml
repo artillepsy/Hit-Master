@@ -11,28 +11,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b83b9ee-354b-408d-b02a-7920b6c32333" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyRagdollActivator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyRagdollActivator.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Level.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Level/StartUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Level/StartUI.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimationController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimationController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/EndUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/EndUI.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Test Task/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test Task/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Test Task/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test Task/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PolygonStarter/Models/Characters.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PolygonStarter/Models/Characters.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PolygonStarter/Prefabs/Characters/SM_Character_Male_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PolygonStarter/Prefabs/Characters/SM_Character_Male_01.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Character/Ch32_nonPBR@Pistol Walk.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Character/Ch32_nonPBR@Pistol Walk.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Character/EnemyController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Character/EnemyController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Character/Idle.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Character/Idle.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Character/Pistol Idle.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Character/Pistol Idle.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Character/Pistol Walk(3).fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Character/Pistol Walk(3).fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Character/PlayerController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Character/PlayerController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/CylinderMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/CylinderMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/PlayerMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/PlayerMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonStarter/Materials/PolygonStarter_Mat_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PolygonStarter/Materials/PolygonStarter_Mat_01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonStarter/Materials/PolygonStarter_Mat_02.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PolygonStarter/Materials/PolygonStarter_Mat_02.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonStarter/Materials/PolygonStarter_Mat_04.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PolygonStarter/Materials/PolygonStarter_Mat_04.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Navigation/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Navigation/PlayerMovement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level/StartUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/StartUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level/StartUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/StartUI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Navigation/Waypoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Navigation/Waypoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shooting/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shooting/Bullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shooting/PlayerShooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerShooting.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shooting/PlayerShooting.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerShooting.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,17 +61,19 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Navigation/PlayerRotation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Shooting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shooting/BulletPool.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Navigation/Waypoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shooting/PlayerShooting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Level/StartUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Navigation/PlayerMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimationController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyStateController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyRagdollActivator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerShooting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shooting/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/StartUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Navigation/Waypoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/EndUI.cs" />
       </list>
     </option>
   </component>
@@ -108,7 +120,7 @@
       <option name="presentableId" value="Default" />
       <updated>1659774636318</updated>
       <workItem from="1659774663786" duration="9067000" />
-      <workItem from="1659790904313" duration="17737000" />
+      <workItem from="1659790904313" duration="22606000" />
     </task>
     <servers />
   </component>

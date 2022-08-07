@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Level;
 using Navigation;
+using UI;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
@@ -18,6 +18,8 @@ namespace Player
         public static UnityEvent OnPlayerStop = new UnityEvent();
         public static UnityEvent OnPlayerRotate = new UnityEvent();
         public static UnityEvent OnPlayerStartMove = new UnityEvent();
+        public static UnityEvent OnFinishReach = new UnityEvent();
+        
 
         private void Start()
         {
@@ -35,7 +37,9 @@ namespace Player
 
         private void SetDestination()
         {
-            _agent.SetDestination(_currentWaypoint.transform.position);
+            var destination = _currentWaypoint.transform.position;
+            destination.y = transform.position.y;
+            _agent.SetDestination(destination);
             _waypointIndex++;
             OnPlayerStartMove?.Invoke();
             StartCoroutine(RotateToTargetCO());
@@ -48,7 +52,7 @@ namespace Player
         {
             var sqrStopDistance = _agent.stoppingDistance * _agent.stoppingDistance;
             var targetRotation = Quaternion.Euler(0, _currentWaypoint.transform.rotation.eulerAngles.y, 0);
-
+            
             while (true)
             {
                 var distance = (transform.position - _agent.destination).sqrMagnitude;
@@ -63,7 +67,8 @@ namespace Player
                     Time.deltaTime * _agent.angularSpeed);
                 yield return null;
             }
-            OnPlayerRotate?.Invoke();
+            if(_currentWaypoint.IsFinish) OnFinishReach?.Invoke();
+            else OnPlayerRotate?.Invoke();
         }
     }
 }

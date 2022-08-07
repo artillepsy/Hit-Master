@@ -9,6 +9,7 @@ namespace Navigation
     public class Waypoint : MonoBehaviour
     {
         [SerializeField] private int id;
+        [SerializeField] private bool isFinish = false;
         [SerializeField] private bool removeMeshes = true;
         [Space]
         [SerializeField] private List<EnemyHealth> enemyHealthComponents;
@@ -18,6 +19,7 @@ namespace Navigation
         public static UnityEvent OnClearWaypoint = new UnityEvent();
         
         public int Id => id;
+        public bool IsFinish => isFinish;
 
         private void Awake()
         {
