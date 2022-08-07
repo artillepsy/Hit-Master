@@ -1,7 +1,8 @@
 ﻿using Navigation;
+using Shooting;
 using UnityEngine;
 
-namespace Shooting
+namespace Player
 {
     public class PlayerShooting : MonoBehaviour
     {
@@ -14,18 +15,22 @@ namespace Shooting
         private void Start()
         {
             _cam = Camera.main;
-            PlayerMovement.OnPlayerStop.AddListener(() => _shootingEnabled = true);
+            PlayerMovement.OnPlayerRotate.AddListener(() => _shootingEnabled = true);
             Waypoint.OnClearWaypoint.AddListener(() => _shootingEnabled = false);
         }
 
         private void Update()
         {
             if (!_shootingEnabled) return;
+            
+            fireSource.forward = transform.forward;
             if (Input.touchCount == 0) return;
             if (Input.touches[0].phase != TouchPhase.Began) return;
 
+
             var ray = _cam.ScreenPointToRay(Input.touches[0].position);
-            var plane = new Plane(-transform.forward, transform.position + transform.forward * planeDistance);
+            var plane = new Plane(-_cam.transform.forward, 
+                transform.position + _cam.transform.forward * planeDistance);
             
             if (!plane.Raycast(ray, out var distance)) return;
             

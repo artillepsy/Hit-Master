@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Level;
+using Navigation;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
 
-namespace Navigation
+namespace Player
 {
     public class PlayerMovement : MonoBehaviour
     {
@@ -14,6 +16,8 @@ namespace Navigation
         private Waypoint _currentWaypoint;
         private int _waypointIndex = 0;
         public static UnityEvent OnPlayerStop = new UnityEvent();
+        public static UnityEvent OnPlayerRotate = new UnityEvent();
+        public static UnityEvent OnPlayerStartMove = new UnityEvent();
 
         private void Start()
         {
@@ -25,8 +29,7 @@ namespace Navigation
             
             _currentWaypoint = _waypoints[0];
             
-            SetDestination();
-            
+            StartUI.OnLevelStart.AddListener(SetDestination);
             Waypoint.OnClearWaypoint.AddListener(SetDestination);
         }
 
@@ -34,7 +37,7 @@ namespace Navigation
         {
             _agent.SetDestination(_currentWaypoint.transform.position);
             _waypointIndex++;
-            
+            OnPlayerStartMove?.Invoke();
             StartCoroutine(RotateToTargetCO());
 
             if (_waypointIndex > _waypoints.Count - 1) return;
@@ -52,7 +55,7 @@ namespace Navigation
                 if (distance <= sqrStopDistance) break;
                 yield return null;
             }
-
+            OnPlayerStop?.Invoke();
             while (Quaternion.Angle(transform.rotation, targetRotation) > 0.5f)
             {
                 transform.rotation = Quaternion.RotateTowards(transform.rotation,
@@ -60,7 +63,7 @@ namespace Navigation
                     Time.deltaTime * _agent.angularSpeed);
                 yield return null;
             }
-            OnPlayerStop?.Invoke();
+            OnPlayerRotate?.Invoke();
         }
     }
 }
