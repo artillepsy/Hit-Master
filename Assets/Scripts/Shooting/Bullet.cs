@@ -35,13 +35,13 @@ namespace Shooting
             BulletPool.Inst.Add(gameObject);
         }
 
-        private void OnCollisionEnter(Collision other)
+        private void OnTriggerEnter(Collider other)
         {
             if (_collided) return;
-            if (other.collider.GetComponentInParent<PlayerShooting>()) return;
-            if (other.collider.GetComponentInParent<Bullet>()) return;
+            if (other.GetComponentInParent<PlayerShooting>()) return;
+            if (other.GetComponentInParent<Bullet>()) return;
             
-            var comp = other.collider.GetComponentInParent<EnemyHealth>();
+            var comp = other.GetComponentInParent<EnemyHealth>();
             if (comp) comp.TakeDamage(damage);
             _collided = true;
             BulletPool.Inst.Add(gameObject);

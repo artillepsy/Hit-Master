@@ -70,6 +70,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0f91dd48bf252d4eb6c9336e7731c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  body: {fileID: 2104011373941870771}
 --- !u!114 &6668007248625752569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,8 +83,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46205b3072824e8b9a796b1dc5736004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  body: {fileID: 2104011373941870771}
   fireSource: {fileID: 8341703310896749676}
   bulletPrefab: {fileID: 4828844943619670903, guid: 3379e3c66136cef46adea8a23f10bca4, type: 3}
+  angularSpeedSec: 300
   planeDistance: 10
 --- !u!114 &1442715226618971651
 MonoBehaviour:

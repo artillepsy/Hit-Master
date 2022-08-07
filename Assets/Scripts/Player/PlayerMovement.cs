@@ -11,15 +11,17 @@ namespace Player
 {
     public class PlayerMovement : MonoBehaviour
     {
+        [SerializeField] private Transform body;
         private NavMeshAgent _agent;
         private List<Waypoint> _waypoints;
         private Waypoint _nextWaypoint;
         private int _waypointIndex = 0;
+        
+        public static UnityEvent<Waypoint> OnWaypointUpdate = new UnityEvent<Waypoint>();
         public static UnityEvent OnPlayerStop = new UnityEvent();
         public static UnityEvent OnPlayerRotate = new UnityEvent();
         public static UnityEvent OnPlayerStartMove = new UnityEvent();
         public static UnityEvent OnFinishReach = new UnityEvent();
-        
 
         private void Start()
         {
@@ -36,10 +38,13 @@ namespace Player
         private void SetDestination()
         {
             if (_waypointIndex > _waypoints.Count - 1) return;
+            
             _nextWaypoint = _waypoints[_waypointIndex];
+            _nextWaypoint.ActivateEnemies();
             
             var destination = _nextWaypoint.transform.position;
             destination.y = transform.position.y;
+            
             _agent.SetDestination(destination);
             _waypointIndex++;
             OnPlayerStartMove?.Invoke();
@@ -65,6 +70,7 @@ namespace Player
                     Time.deltaTime * _agent.angularSpeed);
                 yield return null;
             }
+            OnWaypointUpdate?.Invoke(_nextWaypoint);
             if(_nextWaypoint.IsFinish) OnFinishReach?.Invoke();
             else OnPlayerRotate?.Invoke();
         }

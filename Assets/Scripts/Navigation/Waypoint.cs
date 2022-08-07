@@ -15,11 +15,19 @@ namespace Navigation
         [SerializeField] private List<EnemyHealth> enemyHealthComponents;
         private int _needKillCount;
         private int _killedEnemies = 0;
-
+        public List<EnemyHealth> EnemyHealthComponents => enemyHealthComponents;
         public static UnityEvent OnClearWaypoint = new UnityEvent();
         
         public int Id => id;
         public bool IsFinish => isFinish;
+
+        public void ActivateEnemies()
+        {
+            foreach (var enemyHealth in enemyHealthComponents)
+            {
+                enemyHealth.SetDamageable();
+            }
+        }
 
         private void Awake()
         {

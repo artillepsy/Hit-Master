@@ -8,6 +8,7 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Enemy" t="Include">
+            <e p="EnemyAnimationOffsetSetter.cs" t="Include" />
             <e p="EnemyHealth.cs" t="Include" />
             <e p="EnemyRagdollActivator.cs" t="Include" />
           </e>
@@ -25,6 +26,8 @@
           </e>
           <e p="UI" t="Include">
             <e p="EndUI.cs" t="Include" />
+            <e p="Healthbar.cs" t="Include" />
+            <e p="HealthBarsCanvas.cs" t="Include" />
             <e p="StartUI.cs" t="Include" />
           </e>
         </e>
