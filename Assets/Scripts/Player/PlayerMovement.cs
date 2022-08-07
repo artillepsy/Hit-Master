@@ -13,7 +13,7 @@ namespace Player
     {
         private NavMeshAgent _agent;
         private List<Waypoint> _waypoints;
-        private Waypoint _currentWaypoint;
+        private Waypoint _nextWaypoint;
         private int _waypointIndex = 0;
         public static UnityEvent OnPlayerStop = new UnityEvent();
         public static UnityEvent OnPlayerRotate = new UnityEvent();
@@ -29,29 +29,27 @@ namespace Player
             _waypoints = _waypoints.OrderBy(waypoint => waypoint.Id).ToList();
             _waypoints.ForEach(waypoint => Debug.Log(waypoint.Id));
             
-            _currentWaypoint = _waypoints[0];
-            
             StartUI.OnLevelStart.AddListener(SetDestination);
             Waypoint.OnClearWaypoint.AddListener(SetDestination);
         }
 
         private void SetDestination()
         {
-            var destination = _currentWaypoint.transform.position;
+            if (_waypointIndex > _waypoints.Count - 1) return;
+            _nextWaypoint = _waypoints[_waypointIndex];
+            
+            var destination = _nextWaypoint.transform.position;
             destination.y = transform.position.y;
             _agent.SetDestination(destination);
             _waypointIndex++;
             OnPlayerStartMove?.Invoke();
             StartCoroutine(RotateToTargetCO());
-
-            if (_waypointIndex > _waypoints.Count - 1) return;
-            _currentWaypoint = _waypoints[_waypointIndex];
         }
 
         private IEnumerator RotateToTargetCO()
         {
             var sqrStopDistance = _agent.stoppingDistance * _agent.stoppingDistance;
-            var targetRotation = Quaternion.Euler(0, _currentWaypoint.transform.rotation.eulerAngles.y, 0);
+            var targetRotation = Quaternion.Euler(0, _nextWaypoint.transform.rotation.eulerAngles.y, 0);
             
             while (true)
             {
@@ -67,7 +65,7 @@ namespace Player
                     Time.deltaTime * _agent.angularSpeed);
                 yield return null;
             }
-            if(_currentWaypoint.IsFinish) OnFinishReach?.Invoke();
+            if(_nextWaypoint.IsFinish) OnFinishReach?.Invoke();
             else OnPlayerRotate?.Invoke();
         }
     }

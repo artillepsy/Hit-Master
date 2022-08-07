@@ -14,7 +14,7 @@ namespace UI
 
         private void Awake()
         {
-            OnLevelStart.AddListener(() => gameObject.SetActive(false));
+            OnLevelStart.AddListener(() => startCanvasAnim.gameObject.SetActive(false));
         }
 
         private void DisableStartCanvas() => enabled = false;
