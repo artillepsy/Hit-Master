@@ -1,6 +1,6 @@
 ﻿using System.Collections;
+using Core;
 using Navigation;
-using Shooting;
 using UnityEngine;
 
 namespace Player
@@ -9,9 +9,11 @@ namespace Player
     {
         [SerializeField] private Transform body;
         [SerializeField] private Transform fireSource;
-        [SerializeField] private GameObject bulletPrefab;
         [SerializeField] private float angularSpeedSec = 400f;
         [SerializeField] private float planeDistance = 10f;
+        [SerializeField] private AudioClip shootAudioClip;
+        
+        private AudioSource _audioSrc;
         private Coroutine _aimCO;        
         private bool _shootingEnabled = false;
         private Camera _cam;
@@ -19,6 +21,7 @@ namespace Player
         private void Start()
         {
             _cam = Camera.main;
+            _audioSrc = GetComponent<AudioSource>();
             PlayerMovement.OnPlayerRotate.AddListener(() => _shootingEnabled = true);
             PlayerMovement.OnPlayerStartMove.AddListener(() =>
             {
@@ -68,17 +71,10 @@ namespace Player
         
         private void SpawnBullet(Vector3 endPoint)
         {
-            var inst = BulletPool.Inst.Get();
             var pos = fireSource.transform.position;
             var rotation = Quaternion.LookRotation(endPoint - fireSource.position);
-            if (!inst)
-            {
-                Instantiate(bulletPrefab, pos, rotation);
-                return;
-            }
-            inst.transform.position = pos;
-            inst.transform.rotation = rotation;
-            inst.SetActive(true);
+            ObjectPool.Inst.Spawn(Literals.Tags.Bullet, pos, rotation);
+            _audioSrc.PlayOneShot(shootAudioClip);
         }
     }
 }

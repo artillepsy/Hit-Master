@@ -1,5 +1,4 @@
-﻿using Navigation;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Player
 {

@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 3908053355239017144}
   - component: {fileID: 3908053355239017145}
   - component: {fileID: 3908053355239017146}
+  - component: {fileID: 5277996610453223736}
   m_Layer: 0
   m_Name: HitPS
-  m_TagString: Untagged
+  m_TagString: HitPS
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42,7 +43,7 @@ ParticleSystem:
   serializedVersion: 7
   lengthInSec: 0.12
   simulationSpeed: 1
-  stopAction: 2
+  stopAction: 1
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
@@ -666,7 +667,7 @@ ParticleSystem:
     radiusThickness: 1
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
-    m_Rotation: {x: -90, y: 0, z: 0}
+    m_Rotation: {x: 0, y: 0, z: 0}
     m_Scale: {x: 0.52, y: 0.52, z: 0.52}
     placementMode: 0
     m_MeshMaterialIndex: 0
@@ -4804,3 +4805,16 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &5277996610453223736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3908053355239017147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdf49e324e7e4f91a383d1391a8945c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ps: {fileID: 3908053355239017145}

@@ -4305,7 +4305,7 @@ GameObject:
   - component: {fileID: 1947191276}
   - component: {fileID: 1947191275}
   m_Layer: 0
-  m_Name: BulletPool
+  m_Name: ObjectPool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4323,6 +4323,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21903c92e0154ca39c2f5e6d2312a2d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefabs:
+  - {fileID: 8028026369335800410, guid: 8396e90fda6d4924a81868a59232bda7, type: 3}
+  - {fileID: 4828844943619670903, guid: 3379e3c66136cef46adea8a23f10bca4, type: 3}
+  - {fileID: 3908053355239017147, guid: e5e20d08ec721974d8ae570c18ed5c39, type: 3}
 --- !u!4 &1947191276
 Transform:
   m_ObjectHideFlags: 0
@@ -4463,41 +4467,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 2048728184596672925, guid: 879ea0df63ddd4d409df194540bdf1a4, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: caa9778fdebc4ed4f9d0411df73d006b, type: 2}
-    - target: {fileID: 2104011373941870771, guid: 879ea0df63ddd4d409df194540bdf1a4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.077
-      objectReference: {fileID: 0}
     - target: {fileID: 6668007248625752569, guid: 879ea0df63ddd4d409df194540bdf1a4, type: 3}
-      propertyPath: planeDistance
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7964660504649032424, guid: 879ea0df63ddd4d409df194540bdf1a4, type: 3}
-      propertyPath: m_BaseOffset
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7964660504649032424, guid: 879ea0df63ddd4d409df194540bdf1a4, type: 3}
-      propertyPath: m_StoppingDistance
-      value: 0.5
-      objectReference: {fileID: 0}
+      propertyPath: shootAudioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6b7c39690a723e441b33d239b0183682, type: 3}
     - target: {fileID: 8643701502757463081, guid: 879ea0df63ddd4d409df194540bdf1a4, type: 3}
       propertyPath: m_RootOrder
       value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8643701502757463081, guid: 879ea0df63ddd4d409df194540bdf1a4, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8643701502757463081, guid: 879ea0df63ddd4d409df194540bdf1a4, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8643701502757463081, guid: 879ea0df63ddd4d409df194540bdf1a4, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8643701502757463081, guid: 879ea0df63ddd4d409df194540bdf1a4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4538,6 +4514,14 @@ PrefabInstance:
     - target: {fileID: 8643701502757463081, guid: 879ea0df63ddd4d409df194540bdf1a4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8750427862261575416, guid: 879ea0df63ddd4d409df194540bdf1a4, type: 3}
+      propertyPath: m_Volume
+      value: 0.163
+      objectReference: {fileID: 0}
+    - target: {fileID: 8750427862261575416, guid: 879ea0df63ddd4d409df194540bdf1a4, type: 3}
+      propertyPath: m_audioClip
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 879ea0df63ddd4d409df194540bdf1a4, type: 3}
