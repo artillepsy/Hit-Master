@@ -18,9 +18,9 @@ namespace Enemy
 
         private void ActivateRagdoll()
         {
-            foreach (var rigidbody in _rigidbodies)
+            foreach (var rb in _rigidbodies)
             {
-                rigidbody.isKinematic = false;
+                rb.isKinematic = false;
             }
             _animator.enabled = false;
         }

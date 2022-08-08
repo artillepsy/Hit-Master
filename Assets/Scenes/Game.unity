@@ -3685,7 +3685,7 @@ MonoBehaviour:
   m_ZDamping: 0
   m_AngularDampingMode: 0
   m_PitchDamping: 0
-  m_YawDamping: 0
+  m_YawDamping: 0.2
   m_RollDamping: 0
   m_AngularDamping: 0
 --- !u!114 &1587621938
@@ -4451,7 +4451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 2015155478}
   healthBarPrefab: {fileID: 8301459139861565917, guid: 35188cc3260bc114381871148b3dca02, type: 3}
-  barOffsetY: 0.66
+  barOffsetY: 1.5
 --- !u!1001 &2024101260
 PrefabInstance:
   m_ObjectHideFlags: 0

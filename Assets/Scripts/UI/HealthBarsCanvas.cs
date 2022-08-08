@@ -25,7 +25,7 @@ namespace UI
             PlayerMovement.OnWaypointUpdate.AddListener(ActivateHealthBars);   
         }
         
-        private void Update()
+        private void LateUpdate()
         {
             foreach (var pair in _enemies)
             {

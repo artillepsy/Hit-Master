@@ -10,6 +10,9 @@ namespace Shooting
         [SerializeField] private int damage = 50;
         [SerializeField] private float speed = 3f;
         [SerializeField] private float destroyDelaySec = 5f;
+        [Space]
+        [SerializeField] private ParticleSystem hitPS;
+        
         private TrailRenderer _trailRenderer;
         private bool _collided = false;
 
@@ -31,8 +34,15 @@ namespace Shooting
         
         private void AddToPool()
         {
-            _trailRenderer.Clear();
+            //_trailRenderer.Clear();
             BulletPool.Inst.Add(gameObject);
+        }
+
+        private void SpawnParticles()
+        {
+            var rotation = Quaternion.LookRotation(transform.position - transform.forward);
+            var psInstance = Instantiate(hitPS, transform.position, rotation);
+            psInstance.Play();
         }
 
         private void OnTriggerEnter(Collider other)
@@ -44,6 +54,7 @@ namespace Shooting
             var comp = other.GetComponentInParent<EnemyHealth>();
             if (comp) comp.TakeDamage(damage);
             _collided = true;
+            SpawnParticles();
             BulletPool.Inst.Add(gameObject);
         }
     }

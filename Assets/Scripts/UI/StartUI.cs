@@ -11,23 +11,21 @@ namespace UI
         private bool _started = false;
         public static UnityEvent OnLevelStart = new UnityEvent();
 
-        private void Awake()
+        private void DisableStartCanvas()
         {
-            OnLevelStart.AddListener(() => startCanvasAnim.gameObject.SetActive(false));
+            startCanvasAnim.gameObject.SetActive(false);
+            enabled = false;
         }
-
-        private void DisableStartCanvas() => enabled = false;
 
         private void Update()
         {
             if (_started) return;
             if (Input.touchCount == 0) return;
             
-            startCanvasAnim.Play(disappearClip.name); // play animation
+            startCanvasAnim.Play(disappearClip.name);
             OnLevelStart?.Invoke();
             Invoke(nameof(DisableStartCanvas), disappearClip.length);
             _started = true;
-            enabled = false;
         }
     }
 }

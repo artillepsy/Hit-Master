@@ -11,27 +11,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b83b9ee-354b-408d-b02a-7920b6c32333" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyAnimationOffsetSetter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyAnimationOffsetSetter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/HealthBar.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/HealthBar.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/HealthBarsCanvas.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/HealthBarsCanvas.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Test Task/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test Task/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Test Task/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test Task/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Test Task/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test Task/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Character/EnemyController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Character/EnemyController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/CylinderMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/CylinderMat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/StairsMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/StairsMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Canvas/StartCanvasDisappear.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Canvas/StartCanvasDisappear.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Slider.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Slider.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyHealth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyRagdollActivator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyRagdollActivator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Navigation/Waypoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Navigation/Waypoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerShooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerShooting.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shooting/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shooting/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/HealthBarsCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/HealthBarsCanvas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/HealthBarsCanvas.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/HealthBarsCanvas.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/StartUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/StartUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,9 +52,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Navigation/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimationController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyStateController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyRagdollActivator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/EndUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/StartUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/hEALTHcANVAS.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/HealthCanvas.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyHealthbarDIsplayer.cs" />
@@ -71,13 +63,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/HealtBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/HealhtBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/HealthBar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Navigation/Waypoint.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Shooting/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerShooting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyAnimationOffsetSetter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyRagdollActivator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Navigation/Waypoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/HealthBarsCanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shooting/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerShooting.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/StartUI.cs" />
       </list>
     </option>
   </component>
@@ -124,7 +118,8 @@
       <option name="presentableId" value="Default" />
       <updated>1659774636318</updated>
       <workItem from="1659774663786" duration="9067000" />
-      <workItem from="1659790904313" duration="42876000" />
+      <workItem from="1659790904313" duration="44699000" />
+      <workItem from="1659941039257" duration="1025000" />
     </task>
     <servers />
   </component>

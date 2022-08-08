@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Enemy;
 using UnityEngine;
 using UnityEngine.Events;
@@ -32,7 +31,6 @@ namespace Navigation
         private void Awake()
         {
             if (!removeMeshes) return;
-
             foreach (var meshFilter in GetComponentsInChildren<MeshFilter>())          
             {
                 meshFilter.gameObject.SetActive(false);

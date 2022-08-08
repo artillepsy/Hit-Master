@@ -31,7 +31,7 @@ namespace Player
 
         private void Update()
         {
-            fireSource.forward = transform.forward;
+            fireSource.forward = body.forward;
             
             if (!_shootingEnabled) return;
             
