@@ -7,10 +7,18 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="COre" t="Include">
+            <e p="AudioSourceDeactivator.cs" t="Include" />
+            <e p="ObjectPool.cs" t="Include" />
+            <e p="ParticlesDeactivator.cs" t="Include" />
+          </e>
           <e p="Enemy" t="Include">
             <e p="EnemyAnimationOffsetSetter.cs" t="Include" />
             <e p="EnemyHealth.cs" t="Include" />
             <e p="EnemyRagdollActivator.cs" t="Include" />
+          </e>
+          <e p="Literals" t="Include">
+            <e p="Tags.cs" t="Include" />
           </e>
           <e p="Navigation" t="Include">
             <e p="Waypoint.cs" t="Include" />
@@ -22,7 +30,6 @@
           </e>
           <e p="Shooting" t="Include">
             <e p="Bullet.cs" t="Include" />
-            <e p="BulletPool.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
             <e p="EndUI.cs" t="Include" />
