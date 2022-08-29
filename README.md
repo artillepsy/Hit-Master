@@ -1,4 +1,4 @@
-# HitMaster
+# Hit Master
 
 ### Description
 
