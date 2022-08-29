@@ -10,6 +10,7 @@ Were used next Unity Features:
 
 - NavMesh
 - Ragdolls 
+- CInemachine
 
 And created these features:
 
