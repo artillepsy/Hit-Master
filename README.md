@@ -21,7 +21,7 @@ And created these features:
 
 <sub>Click on image to play</sub>
 
-[<img src="https://img.youtube.com/vi/k49zWc5Jxkc/hqdefault.jpg" width="50%">](https://youtu.be/k49zWc5Jxkc)
+[<img src="https://img.youtube.com/vi/lR-0vP9UaQE/hqdefault.jpg" width="50%">](https://youtu.be/lR-0vP9UaQE)
 
 ### Summary
 
