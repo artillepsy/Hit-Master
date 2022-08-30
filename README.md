@@ -2,7 +2,7 @@
 
 ### Description
 
-Simple clone of Hit Master. You should kill enemies by tap on them and shooting bullets to their direction. After clearing the point your character moves to the next point.
+Simple clone of Hit Master on Android. You should kill enemies by tap on them and shooting bullets to their direction. After clearing the point your character moves to the next point.
 
 ### Features
 
